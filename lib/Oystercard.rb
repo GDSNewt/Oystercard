@@ -12,6 +12,10 @@ def topup(money)
 end
 
 def deduct(money)
-@balance -= money
+  @balance -= money
+end
+
+def in_journey?
+  @in_journey
 end
 end

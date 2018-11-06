@@ -20,4 +20,7 @@ end
     oystercard.topup(50)
     expect{oystercard.deduct 25}.to change { oystercard.balance }.by -25
   end
+  it "checks whether card is in_journey " do
+    expect(oystercard).not_to be_in_journey
+  end
 end
