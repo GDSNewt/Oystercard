@@ -1,1 +1,2 @@
-# Oystercard
+# Oystercard pairing session
+readme...
