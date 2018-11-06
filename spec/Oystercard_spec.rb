@@ -15,4 +15,9 @@ end
     oystercard.topup(max_balance)
     expect{oystercard.topup 1 }.to raise_error 'maximum value exceeded'
   end
+
+  it "deducts money from the balance" do
+    oystercard.topup(50)
+    expect{oystercard.deduct 25}.to change { oystercard.balance }.by -25
+  end
 end
